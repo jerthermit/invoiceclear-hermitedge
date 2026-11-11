@@ -1,0 +1,31 @@
+PURCHASE ORDER
+PO Number: MVH-2026-2128
+Revision: 2
+Customer: Mercer Valley Home Health LLC
+Supplier: Harborline Workforce Services LLC
+Currency: USD
+Total Amount: 24000.00
+Issued: 2026-08-12
+Business account: MVH-04018
+Service branch: Columbus East
+Department / cost center: Clinical float pool CC-410
+Service period: 2026-08-01 through 2026-08-15
+Payment terms: Net 30 days from valid invoice receipt
+Billing contact: ap@mercervalleyhomehealth.example
+
+AUTHORIZED SERVICES
+Registered nursing cover for approved clinical float-pool timecards.
+Maximum authorized hours: 320 at USD 75.00 per hour.
+The total amount is an authorization ceiling, not confirmation of payment.
+
+PURCHASE ORDER MVH-2026-2128 / REVISION 2 / PAGE 2
+BILLING RECONCILIATION SCHEDULE
+Related invoice: STA-2026-2101
+Registered nurses / regular time: 246 hours x USD 75.00 = USD 18450.00
+Related invoice total (not the PO ceiling): USD 18450.00
+
+Nadia Park, Accounts Payable: MVH-2026-2181 was transposed in the billing
+ledger. The current authorization number is MVH-2026-2128. Keep the source
+invoice reference intact and record the supported correction separately.
+Revision 2 supersedes the earlier scheduling authorization.
+No invoice amount, currency or payment change is authorized by this document.

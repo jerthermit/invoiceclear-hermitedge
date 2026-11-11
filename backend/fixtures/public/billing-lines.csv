@@ -1,0 +1,65 @@
+invoice_number,customer,branch,department,service_period,line_number,currency,description,quantity,unit_rate,amount
+STA-2026-1041,Mercer Valley Home Health LLC,Columbus East,Clinical float pool CC-410,2026-08-01 through 2026-08-15,1,USD,Registered nurses / approved regular time,246,75.00,18450.00
+STA-2026-1042,Leonard & Reyes Logistics LLC,Memphis South DC,Outbound operations CC-228,2026-08-01 through 2026-08-15,1,USD,Warehouse associates / approved regular time,420,30.00,12600.00
+STA-2026-1043,A. Quinn Financial Services Inc,Phoenix Operations,Cash reconciliation CC-630,2026-08-01 through 2026-08-15,1,USD,Reconciliation analysts / approved regular time,290,75.00,21750.00
+STA-2026-1044,Leonard & Reyes Logistics LLC,Memphis South DC,Returns operations CC-231,2026-08-01 through 2026-08-15,1,USD,Returns specialists,280,35.00,9800.00
+STA-2026-1045,Mercer Valley Home Health LLC,Columbus North,Ambulatory nursing CC-416,2026-08-01 through 2026-08-15,1,USD,Registered nurses,208,75.00,15600.00
+STA-2026-1046,A. Quinn Financial Services Inc,Phoenix Operations,Loan servicing CC-642,2026-08-01 through 2026-08-15,1,USD,Loan servicing associates,168,67.50,11340.00
+STA-2026-1047,Thompson-Hale Aerospace Components Inc,Wichita Plant 2,Quality assurance CC-712,2026-08-01 through 2026-08-15,1,USD,Quality inspectors / regular hours,184.75,68.35,12627.66
+STA-2026-1047,Thompson-Hale Aerospace Components Inc,Wichita Plant 2,Quality assurance CC-712,2026-08-01 through 2026-08-15,2,USD,Quality inspectors / overtime hours,17.25,102.53,1768.64
+STA-2026-1048,Foster & Ortiz Food Processing LLC,Des Moines Cold Store,Packaging line 4 CC-304,2026-08-01 through 2026-08-15,1,USD,Production associates / regular hours,271.50,46.75,12692.63
+STA-2026-1048,Foster & Ortiz Food Processing LLC,Des Moines Cold Store,Packaging line 4 CC-304,2026-08-01 through 2026-08-15,2,USD,Production associates / overtime hours,44.50,70.25,3126.13
+STA-2026-1049,S.E. Howard Hotel Management LLC,Savannah Waterfront,Banquet operations CC-186,2026-08-16 through 2026-08-31,1,USD,Guest services / regular hours,327.75,31.45,10307.74
+STA-2026-1049,S.E. Howard Hotel Management LLC,Savannah Waterfront,Banquet operations CC-186,2026-08-16 through 2026-08-31,2,USD,Banquet support / overtime hours,21.50,47.18,1014.37
+STA-2026-1050,K.B. Duncan Diagnostic Laboratories LLC,Raleigh Lab West,Specimen processing CC-522,2026-08-01 through 2026-08-15,1,USD,Laboratory technicians / regular hours,218.25,58.40,12745.80
+STA-2026-1050,K.B. Duncan Diagnostic Laboratories LLC,Raleigh Lab West,Specimen processing CC-522,2026-08-01 through 2026-08-15,2,USD,Laboratory technicians / overtime hours,12.75,87.60,1116.90
+STA-2026-1051,Benton Utility Field Services LLC,Tulsa Dispatch,Storm response CC-814,2026-08-01 through 2026-08-15,1,USD,Field dispatch coordinators / regular hours,186.50,52.80,9847.20
+STA-2026-1051,Benton Utility Field Services LLC,Tulsa Dispatch,Storm response CC-814,2026-08-01 through 2026-08-15,2,USD,Weekend dispatch coverage / premium hours,16.25,79.20,1287.00
+STA-2026-1052,Foster & Ortiz Food Processing LLC,Des Moines Cold Store,Packaging line 4 CC-304,2026-08-01 through 2026-08-15,1,USD,Production associates / regular hours,271.50,46.75,12692.63
+STA-2026-1052,Foster & Ortiz Food Processing LLC,Des Moines Cold Store,Packaging line 4 CC-304,2026-08-01 through 2026-08-15,2,USD,Production associates / overtime hours,44.50,70.25,3126.13
+STA-2026-1053,Leonard & Reyes Logistics LLC,Reno Crossdock,Night sort CC-243,2026-08-01 through 2026-08-15,1,USD,Production associates / regular hours,271.50,46.75,12692.63
+STA-2026-1053,Leonard & Reyes Logistics LLC,Reno Crossdock,Night sort CC-243,2026-08-01 through 2026-08-15,2,USD,Production associates / overtime hours,44.50,70.25,3126.13
+STA-2026-1054,Thompson-Hale Aerospace Components Inc,Wichita Plant 2,Quality assurance CC-712,2026-08-01 through 2026-08-15,1,USD,Quality inspectors / regular hours,184.75,68.35,12627.66
+STA-2026-1054,Thompson-Hale Aerospace Components Inc,Wichita Plant 2,Quality assurance CC-712,2026-08-01 through 2026-08-15,2,USD,Quality inspectors / overtime hours,17.25,102.53,1768.64
+STA-2026-1055,Mercer Valley Home Health LLC,Cincinnati South,Outpatient intake CC-438,2026-08-01 through 2026-08-15,1,USD,Laboratory technicians / regular hours,218.25,58.40,12745.80
+STA-2026-1055,Mercer Valley Home Health LLC,Cincinnati South,Outpatient intake CC-438,2026-08-01 through 2026-08-15,2,USD,Laboratory technicians / overtime hours,12.75,87.60,1116.90
+STA-2026-1056,Leonard & Reyes Logistics LLC,Reno Crossdock,Freight scheduling CC-249,2026-08-01 through 2026-08-15,1,USD,Field dispatch coordinators / regular hours,186.50,52.80,9847.20
+STA-2026-1056,Leonard & Reyes Logistics LLC,Reno Crossdock,Freight scheduling CC-249,2026-08-01 through 2026-08-15,2,USD,Weekend dispatch coverage / premium hours,16.25,79.20,1287.00
+STA-2026-1057,K.B. Duncan Diagnostic Laboratories LLC,Buffalo Processing,Regional accessioning CC-528,2026-08-01 through 2026-08-15,1,USD,Laboratory technicians / regular hours,218.25,58.40,12745.80
+STA-2026-1057,K.B. Duncan Diagnostic Laboratories LLC,Buffalo Processing,Regional accessioning CC-528,2026-08-01 through 2026-08-15,2,USD,Laboratory technicians / overtime hours,12.75,87.60,1116.90
+STA-2026-1058,Thompson-Hale Aerospace Components Inc,Charleston Assembly,Supplier inspection CC-725,2026-08-01 through 2026-08-15,1,USD,Quality inspectors / regular hours,184.75,68.35,12627.66
+STA-2026-1058,Thompson-Hale Aerospace Components Inc,Charleston Assembly,Supplier inspection CC-725,2026-08-01 through 2026-08-15,2,USD,Quality inspectors / overtime hours,17.25,102.53,1768.64
+STA-2026-1059,Foster & Ortiz Food Processing LLC,Omaha Processing,Second shift CC-317,2026-08-01 through 2026-08-15,1,USD,Production associates / regular hours,271.50,46.75,12692.63
+STA-2026-1059,Foster & Ortiz Food Processing LLC,Omaha Processing,Second shift CC-317,2026-08-01 through 2026-08-15,2,USD,Production associates / overtime hours,44.50,70.25,3126.13
+STA-2026-1060,S.E. Howard Hotel Management LLC,Charleston Harbor,Guest services CC-195,2026-08-01 through 2026-08-15,1,USD,Guest services / regular hours,327.75,31.45,10307.74
+STA-2026-1060,S.E. Howard Hotel Management LLC,Charleston Harbor,Guest services CC-195,2026-08-01 through 2026-08-15,2,USD,Banquet support / overtime hours,21.50,47.18,1014.37
+STA-2026-1061,Benton Utility Field Services LLC,Tulsa Dispatch,Storm response CC-814,2026-08-01 through 2026-08-15,1,USD,Field dispatch coordinators / regular hours,186.50,52.80,9847.20
+STA-2026-1061,Benton Utility Field Services LLC,Tulsa Dispatch,Storm response CC-814,2026-08-01 through 2026-08-15,2,USD,Weekend dispatch coverage / premium hours,16.25,79.20,1287.00
+STA-2026-1062,K.B. Duncan Diagnostic Laboratories LLC,Raleigh Lab West,Specimen processing CC-522,2026-08-01 through 2026-08-15,1,USD,Laboratory technicians / regular hours,218.25,58.40,12745.80
+STA-2026-1062,K.B. Duncan Diagnostic Laboratories LLC,Raleigh Lab West,Specimen processing CC-522,2026-08-01 through 2026-08-15,2,USD,Laboratory technicians / overtime hours,12.75,87.60,1116.90
+STA-2026-1063,Mercer Valley Home Health LLC,Cincinnati South,Outpatient intake CC-438,2026-08-01 through 2026-08-15,1,USD,Registered nurses / approved regular time,246,75.00,18450.00
+STA-2026-1064,Thompson-Hale Aerospace Components Inc,Charleston Assembly,Supplier inspection CC-725,2026-08-01 through 2026-08-15,1,USD,Quality inspectors / regular hours,184.75,68.35,12627.66
+STA-2026-1064,Thompson-Hale Aerospace Components Inc,Charleston Assembly,Supplier inspection CC-725,2026-08-01 through 2026-08-15,2,USD,Quality inspectors / overtime hours,17.25,102.53,1768.64
+STA-2026-1065,Benton Utility Field Services LLC,Fort Worth Field Office,Meter scheduling CC-822,2026-08-01 through 2026-08-15,1,USD,Field dispatch coordinators / regular hours,186.50,52.80,9847.20
+STA-2026-1065,Benton Utility Field Services LLC,Fort Worth Field Office,Meter scheduling CC-822,2026-08-01 through 2026-08-15,2,USD,Weekend dispatch coverage / premium hours,16.25,79.20,1287.00
+STA-2026-1066,K.B. Duncan Diagnostic Laboratories LLC,Buffalo Processing,Regional accessioning CC-528,2026-08-01 through 2026-08-15,1,USD,Laboratory technicians / regular hours,218.25,58.40,12745.80
+STA-2026-1066,K.B. Duncan Diagnostic Laboratories LLC,Buffalo Processing,Regional accessioning CC-528,2026-08-01 through 2026-08-15,2,USD,Laboratory technicians / overtime hours,12.75,87.60,1116.90
+STA-2026-1067,A. Quinn Financial Services Inc,Salt Lake City Service,Commercial servicing CC-651,2026-08-01 through 2026-08-15,1,USD,Production associates / regular hours,271.50,46.75,12692.63
+STA-2026-1067,A. Quinn Financial Services Inc,Salt Lake City Service,Commercial servicing CC-651,2026-08-01 through 2026-08-15,2,USD,Production associates / overtime hours,44.50,70.25,3126.13
+STA-2026-1068,Thompson-Hale Aerospace Components Inc,Wichita Plant 2,Quality assurance CC-712,2026-08-01 through 2026-08-15,1,USD,Quality inspectors / regular hours,184.75,68.35,12627.66
+STA-2026-1068,Thompson-Hale Aerospace Components Inc,Wichita Plant 2,Quality assurance CC-712,2026-08-01 through 2026-08-15,2,USD,Quality inspectors / overtime hours,17.25,102.53,1768.64
+STA-2026-1069,S.E. Howard Hotel Management LLC,Savannah Waterfront,Banquet operations CC-186,2026-08-01 through 2026-08-15,1,USD,Guest services / regular hours,327.75,31.45,10307.74
+STA-2026-1069,S.E. Howard Hotel Management LLC,Savannah Waterfront,Banquet operations CC-186,2026-08-01 through 2026-08-15,2,USD,Banquet support / overtime hours,21.50,47.18,1014.37
+STA-2026-1070,Foster & Ortiz Food Processing LLC,Omaha Processing,Sanitation support CC-323,2026-08-01 through 2026-08-15,1,USD,Field dispatch coordinators / regular hours,186.50,52.80,9847.20
+STA-2026-1070,Foster & Ortiz Food Processing LLC,Omaha Processing,Sanitation support CC-323,2026-08-01 through 2026-08-15,2,USD,Weekend dispatch coverage / premium hours,16.25,79.20,1287.00
+STA-2026-1071,Leonard & Reyes Logistics LLC,Dallas Distribution,Peak pick-pack CC-255,2026-08-01 through 2026-08-15,1,USD,Warehouse associates,375,39.50,14812.50
+STA-2026-1071,Leonard & Reyes Logistics LLC,Dallas Distribution,Peak pick-pack CC-255,2026-08-01 through 2026-08-15,2,USD,Approved shift allowance,1,25.00,25.00
+STA-2026-1072,Leonard & Reyes Logistics LLC,Dallas Distribution,Peak pick-pack CC-255,2026-08-01 through 2026-08-15,1,USD,Warehouse associates,187.50,39.00,7312.50
+STA-2026-1072,Leonard & Reyes Logistics LLC,Dallas Distribution,Peak pick-pack CC-255,2026-08-01 through 2026-08-15,2,USD,Approved timecard rounding adjustment,1,0.15,0.15
+STA-2026-1073,Mercer Valley Home Health LLC,Dayton Regional,Allied health CC-445,2026-08-01 through 2026-08-15,1,USD,Allied health professionals,200,62.50,12500.00
+STA-2026-1074,Mercer Valley Home Health LLC,Dayton Regional,Allied health CC-445,2026-08-01 through 2026-08-15,1,USD,Allied health professionals,88,62.50,5500.00
+STA-2026-1074,Mercer Valley Home Health LLC,Dayton Regional,Allied health CC-445,2026-08-01 through 2026-08-15,2,USD,Approved timecard rounding adjustment,1,0.01,0.01
+STA-2026-1075,Benton Utility Field Services LLC,Fort Worth Field Office,Meter scheduling CC-822,2026-08-01 through 2026-08-15,1,USD,Field dispatch coordinators / regular hours,186.50,52.80,9847.20
+STA-2026-1075,Benton Utility Field Services LLC,Fort Worth Field Office,Meter scheduling CC-822,2026-08-01 through 2026-08-15,2,USD,Weekend dispatch coverage / premium hours,16.25,79.20,1287.00
+STA-2026-1076,Mercer Valley Home Health LLC,Detroit Remote Services,Cross-border scheduling CC-449,2026-08-01 through 2026-08-15,1,CAD,Cross-border scheduling coordinators,160,62.50,10000.00
+STA-2026-2101,Mercer Valley Home Health LLC,Columbus East,Clinical float pool CC-410,2026-08-01 through 2026-08-15,1,USD,Registered nurses / regular time,246,75.00,18450.00

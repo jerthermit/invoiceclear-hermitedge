@@ -1,0 +1,2 @@
+invoice_number,customer,customer_email,amount,currency,issue_date,due_date,po_reference,source_ref
+STA-2026-2101,Mercer Valley Home Health LLC,ap@mercervalleyhomehealth.example,18450.00,USD,2026-08-16,2026-09-15,MVH-2026-2181,HB-20260816-US / MVH-04018 / Columbus East / Clinical float pool / Net 30

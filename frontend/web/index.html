@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Agent for Invoice Resolution. Investigate purchase-order issues and prepare evidence-backed billing handoffs.">
+  <meta name="color-scheme" content="light">
+  <title>InvoiceClear</title>
+  <link rel="icon" href="/hermit-edge-mark.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/folio.css">
+  <script src="/config.js" defer></script>
+  <script src="/interactions.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace-main">Skip to workspace</a>
+  <section class="access-view" id="access-view" aria-labelledby="access-heading">
+    <div class="access-brand"><img src="/hermit-edge-mark.png" alt="" width="30" height="30"><span>HERMIT EDGE</span></div>
+    <div class="access-layout">
+      <div class="access-art" aria-hidden="true">
+        <div class="folio-shadow"></div>
+        <div class="folio-scene"><div class="folio">
+          <div class="folio-back"></div>
+          <div class="folio-leaf folio-leaf-back"><i></i><i></i><i></i><i></i></div>
+          <div class="folio-leaf folio-leaf-middle"><i></i><i></i><i></i><i></i></div>
+          <div class="folio-leaf folio-leaf-front"><div class="folio-monogram">ic.</div><i></i><i></i><i></i><div class="folio-ruling"></div></div>
+          <div class="folio-cover"><div class="folio-cover-mark">ic.</div><div class="folio-spine"></div><span class="folio-seam"></span><span class="folio-fastener"><i></i></span></div>
+        </div></div>
+      </div>
+      <div class="access-entry">
+      <div class="access-wordmark"><h1 id="access-heading">InvoiceClear<span>.</span></h1><p class="product-subname">AI Agent for Invoice Resolution</p></div>
+      <form class="access-form" id="access-form">
+        <h2>Sign in</h2>
+        <label class="access-field">Email<input id="access-email" type="email" name="email" autocomplete="username" required></label>
+        <label class="access-field">Password<span class="password-field"><input id="access-password" type="password" name="password" autocomplete="current-password" required><button id="password-toggle" type="button" aria-label="Show password">Show</button></span></label>
+        <p id="access-error" class="field-error" role="alert" hidden></p>
+        <button class="button primary access-submit" id="access-submit" type="submit" disabled>Open workspace <svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true"><path d="M4 10H16M11 5L16 10L11 15" stroke="currentColor" stroke-width="1.5"/></svg></button>
+        <button class="text-button" id="runtime-retry" type="button" hidden>Try again</button>
+      </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <header class="topbar">
+      <div class="brand-lockup"><img src="/hermit-edge-mark.png" alt="" width="28" height="28"><div class="brand-name"><strong>InvoiceClear<span>.</span></strong><span class="brand-subname">AI Agent for Invoice Resolution</span></div></div>
+      <div class="account-controls"><button id="connections-open" class="text-button" type="button" hidden>Connections</button><button id="logout" class="text-button sign-out" type="button">Sign out</button></div>
+    </header>
+    <main id="workspace-main" tabindex="-1">
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden><span id="notice-text"></span><button id="notice-dismiss" type="button" aria-label="Dismiss notification">×</button></div>
+      <div class="workspace-layout">
+      <section id="queue-view" class="queue-view" aria-labelledby="queue-heading">
+        <header class="index-heading"><div class="scene-heading"><h2 id="queue-heading">Invoices</h2><button class="button primary" id="entry-open" type="button"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" aria-hidden="true"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5"/></svg>Add invoice</button></div>
+<div class="queue-toolbar"><div class="queue-filters" role="group" aria-label="Invoice view"><button type="button" data-view="open" aria-pressed="true">Needs work</button><button type="button" data-view="prepared" aria-pressed="false">Prepared</button><button type="button" data-view="all" aria-pressed="false">All</button></div><label class="queue-search"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.25" stroke="currentColor" stroke-width="1.5"/><path d="M12.5 12.5L17 17" stroke="currentColor" stroke-width="1.5"/></svg><span class="sr-only">Search invoices</span><input id="queue-search" type="search" placeholder="Search invoices" autocomplete="off"></label><div class="queue-action-links"><button class="text-button" id="import-open" type="button">Import CSV</button><button class="text-button" id="export" type="button">Export prepared</button></div></div>
+        </header>
+        <div id="queue-scroll" class="queue-scroll" role="region" aria-label="Invoice list" tabindex="0"><div class="queue-columns" aria-hidden="true"><span class="col-id">Invoice</span><span class="col-customer">Customer</span><span class="col-status">Next step</span><span class="col-due">Due</span><span class="col-amount">Amount</span></div><div id="queue-list" class="queue-list" aria-live="polite" aria-busy="true"></div></div>
+        <nav id="queue-pagination" class="queue-pagination" aria-label="Invoice pages">
+          <span id="queue-count" role="status"></span>
+          <label class="queue-size">Rows<select id="queue-size" aria-label="Invoices per page"><option value="10">10</option><option value="25">25</option><option value="50">50</option></select></label>
+          <div class="queue-page-controls"><button class="text-button" id="queue-previous" type="button" disabled>Previous</button><form id="queue-page-form"><label>Page<input id="queue-page" type="number" inputmode="numeric" enterkeyhint="go" min="1" max="1" value="1" aria-label="Invoice page" required></label><span id="queue-page-total">of 1</span></form><button class="text-button" id="queue-next" type="button" disabled>Next</button></div>
+        </nav>
+      </section>
+      <section id="case-view" class="case-view" tabindex="-1" aria-label="Invoice review">
+<div class="case-navigation"><button id="queue-back" class="text-button" type="button">← Invoices</button><button id="case-next" class="button quiet case-next" type="button" hidden>Next invoice</button></div>
+        <div id="case-content"><div class="case-placeholder"><svg viewBox="0 0 64 64" width="64" height="64" fill="none" aria-hidden="true"><path d="M17 10H40L49 19V54H17V10Z" stroke="currentColor" stroke-width="1.3"/><path d="M40 10V19H49M24 29H42M24 36H42M24 43H35" stroke="currentColor" stroke-width="1.3"/></svg><h2>Select an invoice</h2></div></div>
+      </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="connections-dialog" class="editor-dialog connections-dialog" aria-labelledby="connections-heading">
+    <div class="dialog-heading"><h2 id="connections-heading">Connections</h2><button class="dialog-close" type="button" data-close="connections-dialog" aria-label="Close connections">×</button></div>
+    <div id="connections-content" aria-live="polite"></div>
+    <p id="connections-error" class="field-error" role="alert" hidden></p>
+    <div class="dialog-actions connection-footer"><button id="connections-setup-download" class="text-button" type="button" disabled>Download setup</button><button id="connections-refresh" class="text-button" type="button">Refresh connections</button></div>
+  </dialog>
+  <dialog id="entry-dialog" class="editor-dialog" aria-labelledby="entry-heading">
+    <form id="entry-form">
+      <div class="dialog-heading"><h2 id="entry-heading">Add invoice</h2><button class="dialog-close" type="button" data-close="entry-dialog" aria-label="Close invoice entry">×</button></div>
+      <p class="public-write-note form-note" hidden>Records are visible to other visitors.</p>
+      <div class="form-grid">
+        <label class="field">Invoice number<input name="invoice_number" maxlength="120" required></label><label class="field">Customer<input name="customer" maxlength="200" required></label>
+        <label class="field wide">Customer email<input name="customer_email" type="email" maxlength="254" required></label>
+        <label class="field">Invoice amount<input name="amount" inputmode="decimal" pattern="[0-9]+(\.[0-9]{1,2})?" placeholder="0.00" required></label><label class="field">Currency<input name="currency" minlength="3" maxlength="3" pattern="[A-Za-z]{3}" placeholder="USD" required></label>
+        <label class="field">Issue date<input name="issue_date" type="date" required></label><label class="field">Due date<input name="due_date" type="date" required></label>
+        <label class="field">Source PO reference<input name="po_reference" maxlength="120"></label><label class="field">Source record<input name="source_ref" maxlength="200" placeholder="Ledger reference" required></label>
+      </div>
+      <p id="entry-error" class="field-error" role="alert" hidden></p><div class="dialog-actions"><button class="button quiet" type="button" data-close="entry-dialog">Cancel</button><button class="button primary" type="submit">Add invoice</button></div>
+    </form>
+  </dialog>
+  <dialog id="import-dialog" class="editor-dialog import-dialog" aria-labelledby="import-heading">
+    <form id="import-form"><div class="dialog-heading"><h2 id="import-heading">Import invoices</h2><button class="dialog-close" type="button" data-close="import-dialog" aria-label="Close CSV import">×</button></div>
+      <label class="field">Invoice CSV<input id="import-file" type="file" accept=".csv,text/csv" required></label>
+      <p class="public-write-note form-note" hidden>Records are visible to other visitors.</p>
+      <p class="form-note">Use the template’s columns, decimal amounts and YYYY-MM-DD dates.</p>
+      <button class="text-button" id="template-download" type="button">Download CSV template <span aria-hidden="true">↓</span></button>
+      <button class="text-button" id="source-files-download" type="button" hidden>Download source files <span aria-hidden="true">↓</span></button>
+      <p id="import-error" class="field-error" role="alert" hidden></p><div class="dialog-actions"><button class="button quiet" type="button" data-close="import-dialog">Cancel</button><button class="button primary" type="submit">Import CSV</button></div>
+    </form>
+  </dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-heading" aria-describedby="confirm-description">
+    <form id="confirm-form"><h2 id="confirm-heading"></h2><p id="confirm-description"></p><div id="confirm-summary" class="confirmation-summary"></div><label class="field" id="confirm-note-label">Approval note <span class="optional">optional</span><textarea id="confirm-note" rows="3" maxlength="500"></textarea></label><p id="confirm-error" class="field-error" role="alert" hidden></p><div class="dialog-actions"><button class="button quiet" type="button" data-close="confirm-dialog">Cancel</button><button class="button primary" id="confirm-submit" type="submit">Prepare resolution</button></div></form>
+  </dialog>
+  <footer class="site-footer">© 2026 Emman Ermitaño. All rights reserved.</footer>
+  <noscript><p class="noscript-message">Enable JavaScript to open InvoiceClear.</p></noscript>
+</body>
+</html>

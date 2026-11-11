@@ -1,0 +1,12 @@
+{
+  "name": "invoiceclear-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "build": "node scripts/build_frontend.mjs --deploy",
+    "build:local": "node scripts/build_frontend.mjs",
+    "check": "node --check web/app.js && node --check web/interactions.js && node scripts/test_workflow.mjs && node scripts/test_pagination.mjs && node scripts/test_interactions.mjs && node scripts/test_build.mjs"
+  }
+}

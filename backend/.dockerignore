@@ -1,0 +1,9 @@
+.git
+.env*
+__pycache__/
+*.py[cod]
+data/
+tests/
+dist/
+*.sqlite3*
+*.partial*

@@ -1,0 +1,28 @@
+PURCHASE ORDER
+PO Number: LRL-TEMP-2026-082
+Revision: 1
+Customer: Leonard & Reyes Logistics LLC
+Supplier: Harborline Workforce Services LLC
+Currency: USD
+Total Amount: 12600.00
+Issued: 2026-07-29
+Business account: LRL-08241
+Service branch: Memphis South DC
+Department / cost center: Outbound operations CC-228
+Service period: 2026-08-01 through 2026-08-15
+Payment terms: Net 30 days from valid invoice receipt
+Billing contact: billing@leonardreyeslogistics.example
+
+AUTHORIZED SERVICES
+Outbound warehouse staffing, maximum 420 hours at USD 30.00 per hour.
+
+PURCHASE ORDER LRL-TEMP-2026-082 / REVISION 1 / PAGE 2
+BILLING RECONCILIATION SCHEDULE
+Related invoice: STA-2026-1042
+Warehouse associates / approved regular time: 420 hours x USD 30.00 = USD 12600.00
+Related invoice total (not the PO ceiling): USD 12600.00
+
+Evan Cole, Billing Operations: This PO supports outbound operations only.
+It does not amend the separate LRL-STAFF-224 returns authorization associated
+with STA-2026-1044. Keep both cost centers and their ceilings separate.
+Authorization is not confirmation of payment.
